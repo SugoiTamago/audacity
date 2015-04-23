@@ -900,7 +900,7 @@ int FileDialog::ShowModal()
       if ( dwErr != 0 )
       {
          // this msg is only for developers
-         wxLogError(wxT("Common dialog failed with error code %0lx."),
+         wxLogError(wxT("Common dialog failed with error code %0lx."), // add project name
                     dwErr);
       }
       //else: it was just cancelled
