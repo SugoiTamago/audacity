@@ -891,6 +891,11 @@ int FileDialog::ShowModal()
       {
          wxLogError(wxT("Call not implemented when calling file dialog function."));
       }
+      else if (errCode == ERROR_SOUND)
+      {
+         wxLogError(wxT( "Error opening sound device. Try changing the audio host,
+playback device and the project sample rate."));
+      }
       else
       {
          wxLogError(wxT("Unknown error %d when calling file dialog function."), errCode);
